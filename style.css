@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* added a crosshair and box shadow */
+canvas {
+    border: 2px solid black;
+    box-shadow: black 20px 10px 50px;
+    cursor:crosshair; 
+}
+
+.toolbox {
+    background-color: rgb(36, 50, 61);
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    width: 804px;
+    padding: 1rem;
+    box-shadow: black 20px 10px 50px;
+}
+
+.toolbox > * {
+    background-color: #fff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.toolbox > *:last-child {
+    margin-left: auto;
+}
